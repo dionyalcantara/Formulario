@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+        <form>
+            <fieldset>
+                <legend hidden>Formulário de Cadastro</legend>
+                <div>
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira seu nome aqui" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Insira seu email aqui" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="descricao">Descrição</label>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Fale mais sobre você aqui"></textarea>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="modulo">Módulo</label>
+                        <select name="modulo" id="modulo">
+                            <option value="">Escolher um Módulo</option>
+                            <option value="frontend">Front-end</option>
+                            <option value="backend">Back-end</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="confirmarSenha">Confirmar Senha</label>
+                        <input type="password" name="confirmarSenha" id="confirmarSenha" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Deseja receber novidades em seu e-mail?
+                    </p>
+                        <label for="sim">Sim</label>
+                        <input type="radio" name="news" id="sim" value="sim">
+                        <label for="nao">Não</label>
+                        <input type="radio" name="news" id="nao" value="nao">
+                </div>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+            </fieldset>
+        </form>
+</body>
+</html>
